@@ -1,4 +1,4 @@
-# Automatize Tarefas Macantes com Python
+# Automatize Tarefas Maçantes com Python - 2ª edição
 
 Por Al Sweigart. Gratuito para leitura sob uma licença [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/3.0/).  
 Traduzido de [automatetheboringstuff.com](https://automatetheboringstuff.com/)
@@ -31,7 +31,7 @@ Não gaste seu tempo fazendo o trabalho que um macaco bem treinado poderia fazer
 
 ## Índice
 
-* [Capítulo 0 – Introdução]
+* [Capítulo 0 – Introdução](00-Introducao.md)
 * Capítulo 1 – Python Basics
 * Capítulo 2 – Flow Control
 * Capítulo 3 – Functions
@@ -55,3 +55,11 @@ Não gaste seu tempo fazendo o trabalho que um macaco bem treinado poderia fazer
 * Apêndice A – Installing Third-Party Modules
 * Apêndice B – Running Programs
 * Apêndice C – Answers to the Practice Questions
+
+## Sobre o Autor
+
+Al Sweigart é desenvolvedor de software e ensina programação para crianças e adultos. Ele escreveu vários livros para iniciantes, incluindo
+[Scratch Programming Playground](https://www.nostarch.com/scratchplayground),
+[Cracking Codes with Python](https://inventwithpython.com/cracking/),
+[Invent Your Own Computer Games with Python](https://inventwithpython.com/), e
+[Making Games with Python & Pygame](https://inventwithpython.com/pygame/).

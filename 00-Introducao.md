@@ -1,6 +1,14 @@
+
+- [Introdução](#introdução)
+  - [Para quem é este livro?](#para-quem-é-este-livro)
+  - [Convenções](#convenções)
+  - [O que é programação?](#o-que-é-programação)
+    - [O que é Python?](#o-que-é-python)
+    - [Programadores não precisam saber muita matemática](#programadores-não-precisam-saber-muita-matemática)
+
 # Introdução
 
-![Introdução](../img/000143.jpg)
+![Introdução](img/000143.jpg)
 
 "*Você acabou de fazer em duas horas o que três de nós levamos dois dias para fazer.*" Meu colega de quarto da faculdade estava trabalhando em uma loja de eletrônicos no início dos anos 2000. Ocasionalmente, a loja recebia uma planilha com milhares de preços de produtos de outras lojas. Uma equipe de três funcionários imprimia a planilha em uma pilha grossa de papel e a dividia entre si. Para cada preço de produto, eles procuravam o preço de sua loja e anotavam todos os produtos que seus concorrentes vendiam por menos. Geralmente levava alguns dias.
 
@@ -69,10 +77,6 @@ A ansiedade mais comum que ouço sobre aprender a programar é a noção de que 
 
 Para resolver um quebra-cabeça de Sudoku, os números de 1 a 9 devem ser preenchidos para cada linha, cada coluna e cada quadrado interno 3 × 3 do quadro 9 × 9 completo. Alguns números são fornecidos para você começar e você encontra uma solução fazendo deduções com base nesses números. No quebra-cabeça mostrado na Figura 0-1, como 5 aparece na primeira e na segunda linhas, ele não pode aparecer nessas linhas novamente. Portanto, na grade superior direita, ele deve estar na terceira linha. Como a última coluna também já possui um 5, os 5 não podem ir para a direita dos 6, portanto, devem ir para a esquerda dos 6. A resolução de uma linha, coluna ou quadrado fornecerá mais pistas para o restante o quebra-cabeça e, ao preencher um grupo de números de 1 a 9 e depois outro, em breve você resolverá toda a grade.
 
-![Sudoku](img/000004.jpg)
+![Sudoku](img/000004.jpg)  
 *Figure 0-1: A new Sudoku puzzle (left) and its solution (right). Despite using numbers, Sudoku doesn’t involve much math. (Images © Wikimedia Commons)*
 
-<figure>
-  <img src="img/000004.jpg" alt="Sudoku">
-  <figcaption>Figure 0-1: A new Sudoku puzzle (left) and its solution (right). Despite using numbers, Sudoku doesn’t involve much math. (Images © Wikimedia Commons)</figcaption>
-</figure>

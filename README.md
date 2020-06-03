@@ -1,3 +1,8 @@
+- [Automatize Tarefas Maçantes com Python - 2ª edição](#automatize-tarefas-maçantes-com-python---2ª-edição)
+  - [Programação prática para iniciantes](#programação-prática-para-iniciantes)
+  - [Índice](#índice)
+  - [Sobre o Autor](#sobre-o-autor)
+
 # Automatize Tarefas Maçantes com Python - 2ª edição
 
 Por Al Sweigart. Gratuito para leitura sob uma licença [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/3.0/).  

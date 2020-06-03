@@ -1,3 +1,4 @@
+# Introdução
 
 - [Introdução](#introdução)
   - [Para quem é este livro?](#para-quem-é-este-livro)
@@ -5,8 +6,9 @@
   - [O que é programação?](#o-que-é-programação)
     - [O que é Python?](#o-que-é-python)
     - [Programadores não precisam saber muita matemática](#programadores-não-precisam-saber-muita-matemática)
-
-# Introdução
+    - [Você não é velho demais para aprender programação](#você-não-é-velho-demais-para-aprender-programação)
+    - [Programar é uma atividade criativa](#programar-é-uma-atividade-criativa)
+  - [Sobre este livro](#sobre-este-livro)
 
 ![Introdução](img/000143.jpg)
 
@@ -26,12 +28,12 @@ Este livro não é para essas pessoas. É para todo mundo.
 
 Por si só, este livro não o tornará um desenvolvedor de software profissional, assim como algumas aulas de guitarra o transformarão em uma estrela do rock. Mas se você trabalha em escritório, é administrador, acadêmico ou qualquer outra pessoa que usa um computador para trabalhar ou se divertir, aprenderá o básico da programação para poder automatizar tarefas simples como estas:
 
-* Mover e renomear milhares de arquivos e classificá-los em pastas;
-* Preencher formulários on-line - sem precisar digitar;
-* Baixar arquivos ou copiar o texto de um site sempre que ele é atualizado;
-* Receber mensagens de texto personalizadas do seu computador;
-* Atualizar ou formatar planilhas do Excel;
-* Verificar seu email e enviar respostas pré-escritas.
+- Mover e renomear milhares de arquivos e classificá-los em pastas;
+- Preencher formulários on-line - sem precisar digitar;
+- Baixar arquivos ou copiar o texto de um site sempre que ele é atualizado;
+- Receber mensagens de texto personalizadas do seu computador;
+- Atualizar ou formatar planilhas do Excel;
+- Verificar seu email e enviar respostas pré-escritas.
 
 Essas tarefas são simples, mas os seres humanos gastam tempo fazendo-as, e geralmente são tão triviais ou específicas que não há software pronto para realizá-las. Armado com um pouco de conhecimento de programação, no entanto, você pode fazer com que seu computador execute essas tarefas por você.
 
@@ -45,10 +47,10 @@ Programas de televisão e filmes geralmente mostram programadores furiosamente d
 
 Todos os programas usam instruções básicas como blocos de construção. Aqui estão alguns dos mais comuns, em inglês:
 
-* “Do this; then do that.”
-* “If this condition is true, perform this action; otherwise, do that action.”
-* “Do this action exactly 27 times.”
-* “Keep doing that until this condition is true.”
+- “Do this; then do that.”
+- “If this condition is true, perform this action; otherwise, do that action.”
+- “Do this action exactly 27 times.”
+- “Keep doing that until this condition is true.”
 
 Você pode combinar esses componentes para implementar decisões mais complexas também. Por exemplo, aqui estão as instruções de programação, chamadas de código fonte, para um programa simples escrito na linguagem de programação Python. Começando no topo, o software Python executa cada linha de código (algumas linhas são executadas apenas se uma determinada condição for verdadeira ou o Python executa outra linha) até chegar ao fundo.
 
@@ -67,7 +69,7 @@ Você pode não saber nada sobre programação, mas provavelmente pode adivinhar
 
 ### O que é Python?
 
-*Python* é uma linguagem de programação (com regras de sintaxe para escrever o que é considerado código Python válido) e o software interpretador Python que lê o código-fonte (escrito na linguagem Python) e executa suas instruções. Você pode fazer o download do interpretador Python gratuitamente em https://python.org/ e existem versões para Linux, macOS e Windows.
+*Python* é uma linguagem de programação (com regras de sintaxe para escrever o que é considerado código Python válido) e o software interpretador Python que lê o código-fonte (escrito na linguagem Python) e executa suas instruções. Você pode fazer o download do interpretador Python gratuitamente em <https://python.org/> e existem versões para Linux, macOS e Windows.
 
 O nome Python vem do surreal grupo de comédia britânico Monty Python, não da cobra. Os programadores de Python são carinhosamente chamados de Pythonistas, e as referências de Monty Python e serpentina geralmente apimentam os tutoriais e a documentação de Python.
 
@@ -79,4 +81,27 @@ Para resolver um quebra-cabeça de Sudoku, os números de 1 a 9 devem ser preenc
 
 ![Sudoku](img/000004.jpg)  
 *Figure 0-1: A new Sudoku puzzle (left) and its solution (right). Despite using numbers, Sudoku doesn’t involve much math. (Images © Wikimedia Commons)*
+
+Só porque o Sudoku envolve números não significa que você precisa ser bom em matemática para descobrir a solução. O mesmo se aplica à programação. Como resolver um quebra-cabeça de Sudoku, escrever programas envolve dividir um problema em etapas individuais e detalhadas. Da mesma forma, ao *depurar* programas (ou seja, localizar e corrigir erros), você observa pacientemente o que o programa está fazendo e encontra a causa dos erros. E, como todas as habilidades, quanto mais você programa, melhor se tornará.
+
+### Você não é velho demais para aprender programação
+
+A segunda ansiedade mais comum que ouço sobre aprender a programar é que as pessoas pensam que são velhas demais para aprender. Eu li muitos comentários na Internet de pessoas que acham que é tarde demais para eles, porque eles já têm (ofegam!) 23 anos. Claramente, isso não é "velho demais" para aprender a programar: muitas pessoas aprendem muito mais tarde na vida.
+
+Você não precisa ter começado quando criança para se tornar um programador capaz. Mas a imagem dos programadores como crianças gêmeas é persistente. Infelizmente, contribuo para esse mito quando digo aos outros que estava na escola primária quando comecei a programar.
+
+No entanto, a programação é muito mais fácil de aprender hoje do que nos anos 90. Hoje, existem mais livros, melhores mecanismos de pesquisa e muitos outros sites de perguntas e respostas on-line. Além disso, as próprias linguagens de programação são muito mais fáceis de usar. Por esses motivos, **tudo o que aprendi sobre programação entre o ensino fundamental e o ensino médio pode ser aprendido hoje em poucos fins de semana**. Minha vantagem nem foi tão grande assim.
+
+É importante ter uma "mentalidade de crescimento" sobre programação - em outras palavras, entender que as pessoas desenvolvem habilidades de programação através da prática. Eles não nasceram como programadores, e não ser qualificado em programação agora não é uma indicação de que você nunca pode se tornar um especialista.
+
+### Programar é uma atividade criativa
+
+Programar é uma tarefa criativa, como pintar, escrever, tricotar ou construir castelos LEGO. Como pintar uma tela em branco, a criação de software tem muitas restrições, mas infinitas possibilidades.
+
+A diferença entre programação e outras atividades criativas é que, ao programar, você tem todas as matérias-primas necessárias em seu computador; você não precisa comprar telas, tintas, filmes, fios, tijolos LEGO ou componentes eletrônicos adicionais. Um computador de uma década é mais do que poderoso o suficiente para escrever programas. Depois que seu programa é gravado, ele pode ser copiado perfeitamente um número infinito de vezes. Um suéter de malha só pode ser usado por uma pessoa de cada vez, mas um programa útil pode ser facilmente compartilhado on-line com o mundo inteiro.
+
+## Sobre este livro
+
+A primeira parte deste livro aborda os conceitos básicos de programação Python e a segunda parte abrange várias tarefas que você pode automatizar o computador. Cada capítulo da segunda parte possui programas de projeto para você estudar. Aqui está um breve resumo do que você encontrará em cada capítulo.
+
 

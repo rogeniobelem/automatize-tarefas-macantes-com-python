@@ -9,6 +9,9 @@
     - [Você não é velho demais para aprender programação](#você-não-é-velho-demais-para-aprender-programação)
     - [Programar é uma atividade criativa](#programar-é-uma-atividade-criativa)
   - [Sobre este livro](#sobre-este-livro)
+  - [Baixando e instalando o Python](#baixando-e-instalando-o-python)
+  - [Baixando e instalando o MU](#baixando-e-instalando-o-mu)
+    - [Iniciando o Mu](#iniciando-o-mu)
 
 ![Introdução](img/000143.jpg)
 
@@ -104,4 +107,97 @@ A diferença entre programação e outras atividades criativas é que, ao progra
 
 A primeira parte deste livro aborda os conceitos básicos de programação Python e a segunda parte abrange várias tarefas que você pode automatizar o computador. Cada capítulo da segunda parte possui programas de projeto para você estudar. Aqui está um breve resumo do que você encontrará em cada capítulo.
 
+>**Parte I: Noções básicas de programação em Python**
+>>**Capítulo 1**: **Informações básicas** sobre o Python Abrange expressões, o tipo mais básico de instrução em Python e como usar o software de shell interativo Python para experimentar o código.
+>>
+>>**Capítulo 2**: **Controle de fluxo** Explica como fazer com que os programas decidam quais instruções executar, para que seu código possa responder de forma inteligente a diferentes condições.
+>>
+>>**Capítulo 3**: **Funções** Instrui você sobre como definir suas próprias funções para que você possa organizar seu código em blocos mais gerenciáveis.
+>>
+>>**Capítulo 4**: **Listas** Apresenta o tipo de dados da lista e explica como organizar os dados.
+>>
+>>**Capítulo 5**: **Dicionários e estruturação de dados** Apresenta o tipo de dados do dicionário e mostra maneiras mais poderosas de organizar dados.
+>>
+>>**Capítulo 6**: **Manipulando strings** Cobre o trabalho com dados de texto (chamados strings em Python).
 
+>**Parte II**: **Automatizando tarefas**
+>>**Capítulo 7**: **Correspondência de padrões com expressões regulares** Cobre como o Python pode manipular sequências de caracteres e procurar padrões de texto com expressões regulares.
+>>
+>>**Capítulo 8**: **Validação de entrada** Explica como seu programa pode verificar as informações que um usuário fornece, garantindo que os dados do usuário cheguem em um formato que não cause erros no restante do programa.
+>>
+>>**Capítulo 9**: **Leitura e gravação de arquivos** Explica como seu programa pode ler o conteúdo de arquivos de texto e salvar informações em arquivos no disco rígido.
+>>
+>>**Capítulo 10**: **Organização de arquivos** Mostra como o Python pode copiar, mover, renomear e excluir um grande número de arquivos muito mais rapidamente do que um usuário humano. Também explica a compactação e descompactação de arquivos.
+>>
+>>**Capítulo 11**: **Depuração** Mostra como usar as várias ferramentas de detecção e correção de erros do Python.
+>>
+>>**Capítulo 12**: **Varredura na Web** Mostra como escrever programas que podem baixar automaticamente páginas da Web e analisá-las para obter informações. Isso é chamado de varredura da web.
+>>
+>>**Capítulo 13**: **Trabalhando com planilhas do Excel** Demonstra como manipular programaticamente as planilhas do Excel para que você não precise lê-las. Isso é útil quando o número de documentos que você precisa analisar é de centenas ou milhares.
+>>
+>>**Capítulo 14**: **Trabalhando com o Google Sheets** Abrange como ler e atualizar o Google Sheets, um popular aplicativo de planilha baseado na Web, usando Python.
+>>
+>>**Capítulo 15**: **Trabalhando com documentos PDF e Word** Cobre programaticamente a leitura de documentos Word e PDF.
+>>
+>>**Capítulo 16**: **Trabalhando com arquivos CSV e dados JSON** Continua a explicar como manipular programaticamente documentos, agora discutindo arquivos CSV e JSON.
+>>
+>>**Capítulo 17**: **Mantendo a hora, agendando tarefas e iniciando programas** Explica como os programas Python lidam com a hora e as datas e como agendar seu computador para executar tarefas em determinados horários. Também mostra como seus programas Python podem iniciar programas não-Python.
+>>
+>>**Capítulo 18**: **Enviando email e mensagens de texto** Explica como escrever programas que podem enviar emails e mensagens de texto em seu nome.
+>>
+>>**Capítulo 19**: **Manipulando imagens** Explica como manipular programaticamente imagens como arquivos JPEG ou PNG.
+>>
+>>**Capítulo 20**: **Controlando o teclado e o mouse com automação da GUI** Explica como controlar programaticamente o mouse e o teclado para automatizar cliques e pressionamentos de teclas.
+>>
+>>**Apêndice A**: **Instalação de módulos de terceiros** Mostra como estender o Python com módulos adicionais úteis.
+>>
+>>**Apêndice B**: **Executando programas** Mostra como executar seus programas Python no Windows, macOS e Linux de fora do editor de código.
+>>
+>>**Apêndice C**: **Respostas às questões práticas** Fornece respostas e algum contexto adicional para as questões práticas no final de cada capítulo.
+
+## Baixando e instalando o Python
+
+Você pode baixar o Python para Windows, macOS e Ubuntu gratuitamente em <https://python.org/downloads/>. Se você baixar a versão mais recente da página de download do site, todos os programas deste livro deverão funcionar.
+
+>**ATENÇÃO**
+>>Certifique-se de baixar uma versão do Python 3 (como 3.8.0). Os programas deste livro foram escritos para execução no Python 3 e podem não ser executados corretamente, se houver, no Python 2.
+
+Na página de download, você encontrará instaladores Python para computadores de 64 e 32 bits para cada sistema operacional, portanto, primeiro descubra qual instalador você precisa. Se você comprou seu computador em 2007 ou mais tarde, provavelmente é um sistema de 64 bits. Caso contrário, você tem uma versão de 32 bits, mas aqui está como descobrir com certeza:
+
+- No Windows, selecione **Iniciar** ▸ **Painel de controle** ▸ **Sistema** e verifique se Tipo de sistema indica 64 ou 32 bits.
+- No macOS, vá ao menu Apple, selecione **Sobre este Mac** ▸ **Mais informações** ▸ **Relatório do sistema** ▸ **Hardware** e, em seguida, observe o campo Nome do processador. Se estiver escrito Intel Core Solo ou Intel Core Duo, você possui uma máquina de 32 bits. Se diz mais alguma coisa (incluindo o Intel Core 2 Duo), você tem uma máquina de 64 bits.
+- No Ubuntu Linux, abra um Terminal e execute o comando ```uname -m```. Uma resposta do i686 significa 32 bits e x86_64 significa 64 bits.
+
+No Windows, baixe o instalador do *Python* (o nome do arquivo terminará em *.msi*) e clique duas vezes nele. Siga as instruções que o instalador exibe na tela para instalar o *Python*, conforme listado aqui:
+
+1. Selecione **Instalar para todos os usuários** e clique em **Avançar**.
+1. Aceite as opções padrão para as próximas janelas clicando em **Avançar**.
+
+No macOS, faça o download do arquivo *.dmg* adequado para sua versão do macOS e clique duas vezes nele. Siga as instruções que o instalador exibe na tela para instalar o Python, conforme listado aqui:
+
+1. Quando o pacote DMG abrir em uma nova janela, clique duas vezes no arquivo *Python.mpkg*. Pode ser necessário digitar a senha do administrador.
+2. Aceite as opções padrão para as próximas janelas clicando em **Continuar** e clique em **Concordo** para aceitar a licença.
+3. Na janela final, clique em **Instalar**.
+
+Se você estiver executando o Ubuntu, poderá instalar o Python a partir do Terminal, seguindo estas etapas:
+
+1. Abra a janela do terminal.
+2. Digite ```sudo apt-get install python3```.
+3. Digite ```sudo apt-get install idle3```.
+4. Digite ```sudo apt-get install python3-pip```.
+
+## Baixando e instalando o MU
+
+Enquanto o *interpretador Python* é o software que executa seus programas Python, o *software de edição Mu* é onde você insere seus programas, da mesma maneira que digita em um processador de texto. Você pode baixar o Mu em *<https://codewith.mu/>*.
+
+No Windows e no macOS, baixe o instalador do seu sistema operacional e execute-o clicando duas vezes no arquivo do instalador. Se você estiver no macOS, a execução do instalador abre uma janela onde você deve arrastar o ícone Mu para o ícone da pasta Aplicativos para continuar a instalação. Se você estiver no Ubuntu, precisará instalar o Mu como um pacote Python. Nesse caso, clique no botão Instruções na seção Pacote Python da página de download.
+
+### Iniciando o Mu
+
+Depois de instalado, vamos iniciar o Mu:
+
+- No Windows 7 ou posterior, clique no ícone Iniciar no canto inferior esquerdo da tela, digite **Mu** na caixa de pesquisa e selecione-o.
+- No macOS, abra a janela do Finder, clique em **Aplicativos** e, em seguida, clique em **mu-editor**.
+- No Ubuntu, selecione **Aplicativos** ▸ **Acessórios** ▸ **Terminal** e digite ```python3 –m mu```.
+
+Na primeira vez que o Mu é executado, a janela *Select Mode* será exibida com as opções *Adafruit CircuitPython*, *BBC micro: bit*, *Pygame Zero* e *Python 3*. Selecione **Python 3**. Você sempre pode alterar o modo posteriormente clicando no botão *Mode* na parte superior do janela do editor.

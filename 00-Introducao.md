@@ -12,6 +12,8 @@
   - [Baixando e instalando o Python](#baixando-e-instalando-o-python)
   - [Baixando e instalando o MU](#baixando-e-instalando-o-mu)
     - [Iniciando o Mu](#iniciando-o-mu)
+  - [Iniciando o IDLE](#iniciando-o-idle)
+  - [O Shell Interativo](#o-shell-interativo)
 
 ![Introdução](img/000143.jpg)
 
@@ -201,3 +203,56 @@ Depois de instalado, vamos iniciar o Mu:
 - No Ubuntu, selecione **Aplicativos** ▸ **Acessórios** ▸ **Terminal** e digite ```python3 –m mu```.
 
 Na primeira vez que o Mu é executado, a janela *Select Mode* será exibida com as opções *Adafruit CircuitPython*, *BBC micro: bit*, *Pygame Zero* e *Python 3*. Selecione **Python 3**. Você sempre pode alterar o modo posteriormente clicando no botão *Mode* na parte superior do janela do editor.
+
+>NOTA
+>>Você precisará baixar o Mu versão 1.10.0 ou posterior para instalar os módulos de terceiros apresentados neste livro. No momento da redação deste documento, a 1.10.0 é uma versão alfa e está listada na página de download como um link separado dos principais links de download.
+
+## Iniciando o IDLE
+
+Este livro usa o Mu como editor e shell interativo. No entanto, você pode usar inúmeros editores para escrever o código Python. O software *Integrated Development and Learning Environment* (IDLE) é instalado  com o Python e pode servir como um segundo editor se, por algum motivo, você não conseguir instalar ou trabalhar o Mu. Vamos iniciar o IDLE agora.
+
+- No Windows 7 ou posterior, clique no ícone Iniciar no canto inferior esquerdo da tela, insira **IDLE** na caixa de pesquisa e selecione **IDLE (Python GUI)**.
+- No macOS, abra a janela do Finder, clique em **Aplicativos**, clique em **Python 3.8** e, em seguida, clique no ícone **IDLE**.
+- No Ubuntu, selecione **Aplicativos** ▸ **Acessórios** ▸ **Terminal** e digite ```idle3```. (Você também pode clicar em **Aplicativos** na parte superior da tela, selecione **Programação** e clique em **IDLE 3**.)
+
+## O Shell Interativo
+
+Quando você executa o Mu, a janela exibida é chamada de janela do *editor de arquivos*. Você pode abrir o *shell interativo* clicando no botão REPL. Um shell é um programa que permite digitar instruções no computador, como o Terminal ou *Prompt* de Comando no macOS e Windows, respectivamente. O shell interativo do Python permite inserir instruções para a execução do software interpretador Python. O computador lê as instruções inseridas e as executa imediatamente.
+
+No Mu, o shell interativo é um painel na metade inferior da janela com o seguinte texto:
+
+```IPython
+Jupyter QtConsole 4.3.1
+Python 3.6.3 (v3.6.3:2c5fed8, Oct 3 2017, 18:11:49) [MSC v.1900 64 bit
+(AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.2.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]:
+```
+
+Se você executar o IDLE, o shell interativo é a janela que aparece pela primeira vez. Deve ficar em branco, exceto pelo texto que se parece com isso:
+
+```pycon
+Python 3.8.0b1 (tags/v3.8.0b1:3b5deb0116, Jun 4 2019, 19:52:55) [MSC v.1916
+64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
+
+*In [1]:* e *>>>* são chamados prompts. Os exemplos deste livro usarão o prompt >>> para o shell interativo, pois é mais comum. Se você executar o Python no Terminal ou no Prompt de Comando, eles também usarão o prompt >>>. O prompt In [1]: foi inventado por Jupyter Notebook, outro editor Python popular.
+
+Por exemplo, digite o seguinte no shell interativo ao lado do prompt:
+
+```pycon
+>>> print('Olá, Mundo!')
+```
+
+Depois de digitar essa linha e pressionar ENTER, o shell interativo deve exibir isso em resposta:
+
+```pycon
+>>> print('Olá, Mundo!')
+Olá, Mundo!
+```
+
+Você acabou de dar uma instrução ao computador e ele fez o que mandou fazer!

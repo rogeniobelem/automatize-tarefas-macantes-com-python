@@ -14,6 +14,10 @@
     - [Iniciando o Mu](#iniciando-o-mu)
   - [Iniciando o IDLE](#iniciando-o-idle)
   - [O Shell Interativo](#o-shell-interativo)
+  - [Instalando módulos de terceiros](#instalando-módulos-de-terceiros)
+  - [Como encontrar ajuda](#como-encontrar-ajuda)
+  - [Fazendo perguntas inteligentes de programação](#fazendo-perguntas-inteligentes-de-programação)
+  - [Resumo](#resumo)
 
 ![Introdução](img/000143.jpg)
 
@@ -256,3 +260,68 @@ Olá, Mundo!
 ```
 
 Você acabou de dar uma instrução ao computador e ele fez o que mandou fazer!
+
+## Instalando módulos de terceiros
+
+Alguns códigos Python requerem que seu programa importe módulos. Alguns desses módulos vêm com o Python, mas outros são módulos de terceiros criados por desenvolvedores fora da equipe principal de desenvolvimento do Python. O Apêndice A possui instruções detalhadas sobre como usar o programa pip (no Windows) ou o programa pip3 (no macOS e Linux) para instalar módulos de terceiros. Consulte o Apêndice A quando este manual o instruir a instalar um módulo de terceiros específico.
+
+## Como encontrar ajuda
+
+Os programadores tendem a aprender pesquisando na Internet por respostas para suas perguntas. Isso é bem diferente do modo como muitas pessoas estão acostumadas a aprender - por meio de um professor que dá palestras e pode responder perguntas. O bom de usar a Internet como sala de aula é que existem comunidades inteiras de pessoas que podem responder suas perguntas. De fato, suas perguntas provavelmente já foram respondidas e as respostas estão esperando online para você encontrá-las. Se você encontrar uma mensagem de erro ou tiver problemas para fazer seu código funcionar, você não será a primeira pessoa a ter seu problema e encontrar uma solução é mais fácil do que você imagina.
+
+Por exemplo, vamos causar um erro de propósito: insira ```'42' + 3``` no shell interativo. Você não precisa saber o que essa instrução significa agora, mas o resultado deve ser assim:
+
+```pycon
+>>> '42' + 3
+➊ Traceback (most recent call last):
+     File "<pyshell#0>", line 1, in <module>
+       '42' + 3
+➋ TypeError: Can't convert 'int' object to str implicitly
+   >>>
+```
+
+A mensagem de erro ➋ aparece porque o Python não conseguiu entender suas instruções. A parte de retorno ➊ da mensagem de erro mostra a instrução específica e o número da linha com a qual o Python teve problemas. Se você não tem certeza do que fazer com uma mensagem de erro específica, procure-a online. Digite *“TypeError: Can't convert 'int' object to str implicitly”* (incluindo as aspas) no seu mecanismo de pesquisa favorito e você verá vários links explicando o que significa a mensagem de erro e o que a causa, como mostra a Figura 0-2.
+
+![Busca TypeError](img/000151.jpg)  
+*Figura 0-2: Os resultados do Google para uma mensagem de erro podem ser muito úteis.*
+
+Você frequentemente encontrará alguém que fez a mesma pergunta que você e que outra pessoa já a respondeu de forma útil. Ninguém sabe tudo sobre programação; portanto, uma parte do trabalho diário de qualquer desenvolvedor de software está em procurar respostas para perguntas técnicas.
+
+## Fazendo perguntas inteligentes de programação
+
+Se você não encontrar a resposta pesquisando on-line, tente perguntar às pessoas em um fórum da web como o Stack Overflow (<https://stackoverflow.com/>) ou o subreddit "learn programming" em <https://reddit.com/r/learnprogramming/>. Mas lembre-se de que existem maneiras inteligentes de fazer perguntas de programação que ajudam outras pessoas a ajudá-lo. Para começar, leia as seções de Perguntas frequentes nesses sites sobre a maneira correta de enviar perguntas.
+
+Ao fazer perguntas sobre programação, lembre-se do seguinte:
+
+- Explique o que você está tentando fazer, não apenas o que você fez. Isso permite que a pessoa que o está ajudando saiba se você está no caminho errado.
+- Especifique o ponto em que o erro ocorre. Isso ocorre no início do programa ou somente após você executar uma determinada ação?
+- Copie e cole toda a mensagem de erro e seu código em <https://pastebin.com/> ou <https://gist.github.com/>.
+  Esses sites facilitam o compartilhamento de grandes quantidades de código com pessoas on-line, sem perder a formatação do texto. Você pode colocar a URL do código postado no seu email ou post do fórum. Por exemplo, aqui alguns códigos publicados: <https://pastebin.com/SzP2DbFx/> e <https://gist.github.com/asweigart/6912168/.>
+- Explique o que você já tentou fazer para resolver seu problema. Isso diz às pessoas que você já fez algum trabalho para descobrir as coisas por conta própria.
+- Informe a versão do Python que você está usando. (Existem algumas diferenças importantes entre os interpretadores Python da versão 2 para a versão 3.) Além disso, diga qual sistema operacional e versão você está executando.
+- Se o erro ocorreu após a alteração do código, explique exatamente o que você alterou.
+- Diga se você é capaz de reproduzir o erro toda vez que executa o programa ou se isso ocorre apenas após a execução de determinadas ações. Neste último caso, explique quais são essas ações.
+
+Sempre siga uma boa etiqueta on-line. Por exemplo, não poste suas perguntas em maiúsculas ou faça exigências irracionais das pessoas que tentam ajudá-lo.
+
+Você pode encontrar mais informações sobre como solicitar ajuda de programação em <https://autbor.com/help/>  (em inglês). Você pode encontrar uma lista de perguntas frequentes sobre programação em <https://www.reddit.com/r/learnprogramming/wiki/faq/>  (em inglês) e uma lista semelhante sobre como conseguir um emprego no desenvolvimento de software em <https://www.reddit.com/r/cscareerquestions/wiki/index/> (em inglês).
+
+Gosto muito de ajudar as pessoas a descobrir Python. Escrevo tutoriais de programação no meu blog em <https://inventwithpython.com/blog/> e você pode entrar em contato comigo com perguntas em [al@inventwithpython.com](mailto:al@inventwithpython.com). No entanto, você pode obter uma resposta mais rápida postando suas perguntas em <https://reddit.com/r/inventwithpython/.>
+
+## Resumo
+
+Para a maioria das pessoas, o computador deles é apenas um dispositivo em vez de uma ferramenta. Mas, ao aprender a programar, você terá acesso a uma das ferramentas mais poderosas do mundo moderno e se divertirá ao longo do caminho. Programar não é uma cirurgia no cérebro - é bom para os amadores experimentar e cometer erros.
+
+Este livro pressupõe que você não tenha nenhum conhecimento de programação e o ensinará bastante, mas você pode ter perguntas além do seu escopo. Lembre-se de que fazer perguntas eficazes e saber como encontrar respostas são ferramentas valiosas na sua jornada de programação.
+
+Então, vamos começar!
+
+[//]: # (Rodapé)
+
+Apoie o autor comprando o pacote de impressão / e-book da [No Starch Press](https://www.nostarch.com/automatestuff) ou separadamente na [Amazon](http://www.amazon.com/gp/product/1593275994/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275994&linkCode=as2&tag=playwithpyth-20&linkId=HDM7V3T6RHC5VVN4).
+
+[![automate](img/automate_small_cover.png)](http://www.amazon.com/gp/product/1593275994/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275994&linkCode=as2&tag=playwithpyth-20&linkId=HDM7V3T6RHC5VVN4)
+
+Leia os outros livros em Python licenciados em Creative Commons.
+
+[![Coding with Minecraft](img/cover_codingwithminecraft_thumb-120.png)](https://turtleappstore.com/book) [![Cracking Codes with Python](img/cover_crackingcodes_thumb-120.png)](https://inventwithpython.com/cracking/) [![](img/cover_invent4th_thumb-120.png)](https://inventwithpython.com/invent4thed) [![](img/cover_scratchprogrammingplayground_thumb-120.jpg)](https://inventwithscratch.com/book/) [![](img/cover_makinggames_thumb-120.png)](https://inventwithpython.com/pygame/)

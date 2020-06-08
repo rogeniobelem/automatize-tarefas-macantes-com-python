@@ -68,3 +68,13 @@ Al Sweigart é desenvolvedor de software e ensina programação para crianças e
 [Cracking Codes with Python](https://inventwithpython.com/cracking/),
 [Invent Your Own Computer Games with Python](https://inventwithpython.com/), e
 [Making Games with Python & Pygame](https://inventwithpython.com/pygame/).
+
+[//]: # (Rodapé)
+
+Apoie o autor comprando o pacote de impressão / e-book da [No Starch Press](https://www.nostarch.com/automatestuff) ou separadamente na [Amazon](http://www.amazon.com/gp/product/1593275994/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275994&linkCode=as2&tag=playwithpyth-20&linkId=HDM7V3T6RHC5VVN4).
+
+[![automate](img/automate_small_cover.png)](http://www.amazon.com/gp/product/1593275994/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275994&linkCode=as2&tag=playwithpyth-20&linkId=HDM7V3T6RHC5VVN4)
+
+Leia os outros livros em Python licenciados em Creative Commons.
+
+[![Coding with Minecraft](img/cover_codingwithminecraft_thumb-120.png)](https://turtleappstore.com/book) [![Cracking Codes with Python](img/cover_crackingcodes_thumb-120.png)](https://inventwithpython.com/cracking/) [![](img/cover_invent4th_thumb-120.png)](https://inventwithpython.com/invent4thed) [![](img/cover_scratchprogrammingplayground_thumb-120.jpg)](https://inventwithscratch.com/book/) [![](img/cover_makinggames_thumb-120.png)](https://inventwithpython.com/pygame/)

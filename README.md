@@ -1,12 +1,12 @@
 # Automatize Tarefas Maçantes com Python - 2ª edição
 
+Por *Al Sweigart*. Gratuito para leitura sob uma licença [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/3.0/).  
+Traduzido de [automatetheboringstuff.com](https://automatetheboringstuff.com/)
+
 - [Automatize Tarefas Maçantes com Python - 2ª edição](#automatize-tarefas-maçantes-com-python---2ª-edição)
   - [Programação prática para iniciantes](#programação-prática-para-iniciantes)
   - [Índice](#índice)
   - [Sobre o Autor](#sobre-o-autor)
-
-Por Al Sweigart. Gratuito para leitura sob uma licença [Creative Commons](https://creativecommons.org/licenses/by-nc-sa/3.0/).  
-Traduzido de [automatetheboringstuff.com](https://automatetheboringstuff.com/)
 
 ![Automatize Tarefas Macantes com Python](img/automatize-tarefas-macantes-com-python.png)
 
@@ -37,7 +37,7 @@ Não gaste seu tempo fazendo o trabalho que um macaco bem treinado poderia fazer
 ## Índice
 
 - [Capítulo 0 – Introdução](00-Introducao.md)
-- Capítulo 1 – Python Basics
+- [Capítulo 1 – Python Basics](01-Fundamentos_de_Python.md)
 - Capítulo 2 – Flow Control
 - Capítulo 3 – Functions
 - Capítulo 4 – Lists

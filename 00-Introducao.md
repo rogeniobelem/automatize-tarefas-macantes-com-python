@@ -318,6 +318,10 @@ Então, vamos começar!
 
 [//]: # (Rodapé)
 
+[![TOC](img/toc.png)](README.md#índice) [![Próximo](img/next.png)](01-Fundamentos_de_Python.md)
+
+---
+
 Apoie o autor comprando o pacote de impressão / e-book da [No Starch Press](https://www.nostarch.com/automatestuff) ou separadamente na [Amazon](http://www.amazon.com/gp/product/1593275994/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275994&linkCode=as2&tag=playwithpyth-20&linkId=HDM7V3T6RHC5VVN4).
 
 [![automate](img/automate_small_cover.png)](http://www.amazon.com/gp/product/1593275994/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1593275994&linkCode=as2&tag=playwithpyth-20&linkId=HDM7V3T6RHC5VVN4)

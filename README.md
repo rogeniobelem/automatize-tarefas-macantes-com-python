@@ -48,7 +48,7 @@ Não gaste seu tempo fazendo o trabalho que um macaco bem treinado poderia fazer
 - Capítulo 9 – Reading and Writing Files
 - Capítulo 10 – Organizing Files
 - Capítulo 11 – Debugging
-- Capítulo 12 – Web Scraping
+- Capítulo 12 – Varredura na Web
 - Capítulo 13 – Working with Excel Spreadsheets
 - Capítulo 14 – Working with Google Spreadsheets
 - Capítulo 15 – Working with PDF and Word Documents

@@ -2,6 +2,8 @@
 
 - [Fundamentos de Python](#fundamentos-de-python)
   - [Inserindo expressões no shell interativo](#inserindo-expressões-no-shell-interativo)
+  - [Os tipos de dados Inteiro, Ponto flutuante e String](#os-tipos-de-dados-inteiro-ponto-flutuante-e-string)
+  - [Concatenação e replicação de strings](#concatenação-e-replicação-de-strings)
 
 ![Fundamentos de Python](img/000143.jpg)
 
@@ -95,4 +97,71 @@ SyntaxError: invalid syntax
 SyntaxError: invalid syntax
 ```
 
-Você sempre pode testar para ver se uma instrução funciona inserindo-a no shell interativo. Não se preocupe em quebrar o computador: o pior que pode acontecer é que o Python responda com uma mensagem de erro. Desenvolvedores de software profissionais recebem mensagens de erro enquanto escrevem código o tempo todo.
+Você sempre pode testar para ver se uma instrução funciona inserindo-a no shell interativo. Não se preocupe em quebrar o computador: o pior que pode acontecer é que o Python responda com uma mensagem de erro. Desenvolvedores de software profissionais sempre recebem mensagens de erro enquanto escrevem código.
+
+## Os tipos de dados Inteiro, Ponto flutuante e String
+
+Lembre-se de que expressões são apenas valores combinados com operadores e sempre são avaliadas em um único valor. Um *tipo de dados* é uma categoria para valores e todo valor pertence a exatamente um tipo de dados. Os tipos de dados mais comuns no Python estão listados na Tabela 1-2. Os valores -2 e 30 , por exemplo, são considerados valores *inteiros*. O tipo de dados inteiro (ou *int*) indica valores que são números inteiros. Os números com um ponto decimal (como *3.14*) são chamados de *números de ponto flutuante* (ou *floats*). Observe que, embora o valor 42 seja um número inteiro, o valor 42.0 seria um número de ponto flutuante.
+
+**Tabela 1-2**: *Tipos de dados comuns*
+| Tipo de dados | Exemplos |
+| :---: | :---: |
+| Inteiros|-2 , -1 , 0 , 1 , 2 , 3 , 4 , 5|
+| Números de ponto flutuante | -1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25 |
+| Cordas | 'a' , 'aa' , 'aaa' , 'Olá!' , '11 gatos ' |
+
+Os programas Python também podem ter valores de texto chamados *strings*, ou *strs* (pronuncia-se "stirs"). Sempre coloque sua string entre caracteres de aspas simples (') (como em 'Hello' ou 'Goodbye cruel world!'), Para que o Python saiba onde a string começa e termina. Você pode até ter uma string sem caracteres '' , chamada *string em branco* ou *string vazia*. As strings são explicadas em mais detalhes no Capítulo 4.
+
+Se você vir a mensagem de erro ```SyntaxError: EOL while scanning string literal```, provavelmente esqueceu o caractere de aspas simples no final da string, como neste exemplo:
+
+```pycon
+>>> 'Olá, mundo!
+SyntaxError: EOL while scanning string literal
+```
+
+## Concatenação e replicação de strings
+
+O significado de um operador pode mudar com base nos tipos de dados dos valores próximos a ele. Por exemplo, + é o operador de adição quando opera em dois números inteiros ou em valores de ponto flutuante. No entanto, quando + é usado em dois valores de cadeia, ele une as cadeias como o operador de *concatenação de cadeias*. Digite o seguinte no shell interativo:
+
+```pycon
+>>> 'Alice' + 'Bob'
+'AliceBob'
+```
+
+A expressão é avaliada em uma única e nova string cujo valor é a combinação do texto das duas iniciais. No entanto, se você tentar usar o operador + em uma string e um valor inteiro, o Python não saberá como lidar com isso e exibirá uma mensagem de erro.
+
+```pycon
+>>> 'Alice' + 42
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    'Alice' + 42
+TypeError: can only concatenate str (not "int") to str
+```
+
+A mensagem de erro ```can only concatenate str (not "int") to str``` significa que o Python pensou que você estava tentando concatenar um número inteiro para a string ```'Alice'```. Seu código precisará converter explicitamente o número inteiro em uma string, porque o Python não pode fazer isso automaticamente. (A conversão de tipos de dados será explicada em “ Dissecando o seu programa ” na página 13 quando falamos sobre as funções ```str()```, ```int()``` e ```float()```).
+
+O operador \* multiplica dois valores inteiros ou de ponto flutuante. Mas quando o operador \* é usado em um valor de string e um valor inteiro, ele se torna o operador de *replicação de string*. Digite uma sequência multiplicada por um número no shell interativo para ver isso em ação.
+
+```pycon
+>>> 'Alice' * 5
+'AliceAliceAliceAliceAlice'
+```
+
+A expressão é avaliada em uma única string que repete a string original um número de vezes igual ao valor inteiro. A replicação de string é um truque útil, mas não é usada com tanta frequência como concatenação de cadeias.
+
+O operador \* pode ser usado com apenas dois valores numéricos (para multiplicação) ou um valor de string e um valor inteiro (para replicação de string). Caso contrário, o Python exibirá apenas uma mensagem de erro, como a seguinte:
+
+```pycon
+>>> 'Alice' * 'Bob'
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    'Alice' * 'Bob'
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> 'Alice' * 5.0
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    'Alice' * 5.0
+TypeError: can't multiply sequence by non-int of type 'float'
+```
+
+Faz sentido que o Python não entenda essas expressões: você não pode multiplicar duas palavras e é difícil replicar uma string arbitrária um número fracionário de vezes.

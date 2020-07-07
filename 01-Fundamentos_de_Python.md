@@ -165,3 +165,14 @@ TypeError: can't multiply sequence by non-int of type 'float'
 ```
 
 Faz sentido que o Python não entenda essas expressões: você não pode multiplicar duas palavras e é difícil replicar uma string arbitrária um número fracionário de vezes.
+
+## Armazenando valores em variáveis
+
+Uma *variável* é como uma caixa na memória do computador onde você pode armazenar um único valor. Se você deseja usar o resultado de uma expressão avaliada posteriormente em seu programa, salve-a dentro de uma variável.
+
+Pense em uma variável como uma caixa rotulada na qual um valor é colocado, como na Figura 1-1.
+
+![Variável](img/fig1-1.jpg)  
+*Figura 1-1: spam = 42 é como dizer ao programa: "A variável spam agora tem o valor inteiro 42".*
+
+

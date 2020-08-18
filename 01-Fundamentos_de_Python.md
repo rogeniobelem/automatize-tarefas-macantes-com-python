@@ -4,6 +4,9 @@
   - [Inserindo expressões no shell interativo](#inserindo-expressões-no-shell-interativo)
   - [Os tipos de dados Inteiro, Ponto flutuante e String](#os-tipos-de-dados-inteiro-ponto-flutuante-e-string)
   - [Concatenação e replicação de strings](#concatenação-e-replicação-de-strings)
+  - [Armazenando valores em variáveis](#armazenando-valores-em-variáveis)
+    - [Declarações de atribuição](#declarações-de-atribuição)
+    - [Nomes de Variáveis](#nomes-de-variáveis)
 
 ![Fundamentos de Python](img/000143.jpg)
 
@@ -170,9 +173,64 @@ Faz sentido que o Python não entenda essas expressões: você não pode multipl
 
 Uma *variável* é como uma caixa na memória do computador onde você pode armazenar um único valor. Se você deseja usar o resultado de uma expressão avaliada posteriormente em seu programa, salve-a dentro de uma variável.
 
+### Declarações de atribuição
+
+Você armazenará valores em variáveis ​​com uma *declaração de atribuição*. Uma declaração de atribuição consiste no nome da variável, um sinal de igual (chamado de *operador de atribuição*) e o valor a ser armazenado. Se você inserir a instrução de atribuição ```spam = 42```, uma variável chamada ```spam``` terá o valor inteiro 42 armazenado nela.
+
 Pense em uma variável como uma caixa rotulada na qual um valor é colocado, como na Figura 1-1.
 
 ![Variável](img/fig1-1.jpg)  
 *Figura 1-1: spam = 42 é como dizer ao programa: "A variável spam agora tem o valor inteiro 42".*
 
+Por exemplo, digite o seguinte no shell interativo:
 
+```pycon
+➊ >>> spam = 40
+   >>> spam
+   40
+   >>> eggs = 2
+➋ >>> spam + eggs
+   42
+   >>> spam + eggs + spam
+   82
+➌ >>> spam = spam + 2
+   >>> spam
+   42
+```
+
+Uma variável é *inicializada* (ou criada) na primeira vez que um valor é armazenado nela ➊. Depois disso, você pode usá-la em expressões com outras variáveis ​​e valores ➋. Quando uma variável é atribuída a um novo valor ➌, o valor antigo é esquecido, e é por isso que o ```spam``` foi avaliado para 42 em vez de 40 no final do exemplo. Isso é chamado de ```sobrescrita``` da variável. Insira o seguinte código no shell interativo para tentar sobrescrever uma string:
+
+```pycon
+>>> spam = 'Olá'
+>>> spam
+'Olá'
+>>> spam = 'Adeus'
+>>> spam
+'Adeus'
+```
+Assim como a caixa na Figura 1-2 , a variável de ```spam``` neste exemplo armazena '```Olá```' até que você substitua a string por '```Adeus```' .
+
+![Variável](img/fig1-2.jpg)  
+*Figura 1-2: Quando um novo valor é atribuído a uma variável, o antigo é esquecido.*
+
+### Nomes de Variáveis
+
+Um bom nome de variável descreve os dados que ela contém. Imagine que você se mudou para uma nova casa e rotulou todas as suas caixas de mudança como *Coisas*. Você nunca encontrará nada! A maioria dos exemplos deste livro (e a documentação do Python) usa nomes de variáveis ​​genéricos como ```spam```, ```eggs``` e ```bacon```, que vêm da esquete “*Spam*” do *Monty Python*. Mas em seus programas, um nome descritivo ajudará a tornar seu código mais legível.
+
+Embora você possa nomear de qualquer forma suas variáveis, o Python tem algumas restrições de nomenclatura. A Tabela 1-3 tem exemplos de nomes de variáveis ​​legais. Você pode nomear uma variável de qualquer maneira, desde que obedeça às três regras a seguir:
+
+**Tabela 1-3**: *Nomes válidos e inválidos de variáveis*
+| Nomes válidos de variáveis | Nomes inválidos de variáveis |
+| :---: | :---: |
+| saldo_atual | saldo-atual (hifens não são permitidos) |
+| saldoAtual | saldo atual (espaços não são permitidos) |
+| conta4 | 4conta (não pode começar com um número) |
+| _42 | 42 (não pode começar com um número) |
+| SOMA_TOTAL | $OMA_TOTAL (caracteres especiais como $ não são permitidos) |
+| Olá | 'olá' (caracteres especiais como ' não são permitidos) |
+
+Os nomes das variáveis ​​diferenciam maiúsculas de minúsculas, o que significa que ```spam``` , ```SPAM``` , ```Spam``` e ```sPaM``` são quatro variáveis ​​diferentes. Embora ```Spam``` seja uma variável válida que você pode usar em um programa, é uma convenção do Python iniciar suas variáveis ​​com uma letra minúscula.
+
+Este livro usa *camelcase* para nomes de variáveis ​​em vez de sublinhados; isto é, variáveis ```parecemComIsso``` em vez de ```parecer_com_isso``` . Alguns programadores experientes podem apontar que o estilo de código oficial do Python, PEP 8, diz que sublinhados devem ser usados. Eu, assumidamente, prefiro o *camelcase* e aponto para a seção "Uma Consistência Tola É o Hobgoblin das Mentes Pequenas" no próprio PEP 8:
+
+> A consistência com o guia de estilo é importante. Mas o mais importante: saiba quando ser inconsistente — às vezes, o guia de estilo simplesmente não se aplica. Em caso de dúvida, use seu bom senso.

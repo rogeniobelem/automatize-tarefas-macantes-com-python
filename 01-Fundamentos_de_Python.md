@@ -7,6 +7,7 @@
   - [Armazenando valores em variáveis](#armazenando-valores-em-variáveis)
     - [Declarações de atribuição](#declarações-de-atribuição)
     - [Nomes de Variáveis](#nomes-de-variáveis)
+  - [Seu primeiro programa](#seu-primeiro-programa)
 
 ![Fundamentos de Python](img/000143.jpg)
 
@@ -234,3 +235,57 @@ Os nomes das variáveis ​​diferenciam maiúsculas de minúsculas, o que sign
 Este livro usa *camelcase* para nomes de variáveis ​​em vez de sublinhados; isto é, variáveis ```parecemComIsso``` em vez de ```parecer_com_isso``` . Alguns programadores experientes podem apontar que o estilo de código oficial do Python, PEP 8, diz que sublinhados devem ser usados. Eu, assumidamente, prefiro o *camelcase* e aponto para a seção "Uma Consistência Tola É o Hobgoblin das Mentes Pequenas" no próprio PEP 8:
 
 > A consistência com o guia de estilo é importante. Mas o mais importante: saiba quando ser inconsistente — às vezes, o guia de estilo simplesmente não se aplica. Em caso de dúvida, use seu bom senso.
+
+## Seu primeiro programa
+
+Embora o shell interativo seja bom para executar instruções Python uma de cada vez, para escrever programas Python inteiros, você digitará as instruções no editor de arquivos. O *editor de arquivos* é semelhante aos editores de texto, como Notepad ou TextMate, mas possui alguns recursos específicos para inserir o código-fonte. Para abrir um novo arquivo no Mu, clique no botão **Novo** na linha superior.
+
+A janela que aparece deve conter um cursor aguardando sua entrada, mas é diferente do shell interativo, que executa as instruções do Python assim que você pressionar *```ENTER```*. O editor de arquivos permite que você digite várias instruções, salve o arquivo e execute o programa. Veja como você pode saber a diferença entre os dois:
+
+- A janela de shell interativa sempre será aquela com o prompt >>> .
+- A janela do editor de arquivo não terá o prompt >>> .
+
+Agora é hora de criar seu primeiro programa! Quando a janela do editor de arquivo abrir, digite o seguinte nela:
+
+```py
+➊ # Este programa diz olá e pergunta meu nome.
+
+➋ print('Olá, mundo!')
+   print('Qual é o seu nome?') # Pergunta pelo seu nome
+➌ meuNome = input()
+➍ print('Prazer em conhecê-lo,' + meuNome)
+➎ print('O comprimento do seu nome é: ')
+   print(len(meuNome))
+➏ print('Qual é a sua idade? ') # Pergunta a sua idade
+   minhaIdade = input()
+   print ('Você terá '+ str(int(minhaIdade) ) + 1) + 'em um ano.')
+```
+
+Depois de inserir o código-fonte, salve-o para que não precise redigitá-lo toda vez que iniciar o Mu. Clique no botão **Salvar**, digite *```hello.py```* no campo Nome do arquivo e clique em **Salvar**.
+
+Você deve salvar seus programas de vez em quando enquanto os digita. Dessa forma, se o computador travar ou você sair acidentalmente do Mu, não perderá o código. Como um atalho, você pode pressionar ```CTRL-S``` no Windows e Linux ou ![Command](img/command-MACOS.jpg)-S no macOS para salvar o arquivo.
+
+Depois de salvar, vamos executar nosso programa. Pressione a tecla **F5**. Seu programa deve ser executado na janela do shell interativo. Lembre-se de que você deve pressionar **F5** na janela do editor de arquivos, não na janela do shell interativo. Digite seu nome quando o programa o solicitar. A saída do programa no shell interativo deve ser semelhante a:
+
+```pycon
+Python 3.7.0b4 (v3.7.0b4:eb96c37699, May  2 2018, 19:02:22) [MSC v.1913 64 bit
+(AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> ================================ RESTART ================================
+>>>
+Olá, mundo!
+Qual é o seu nome?
+Al
+É um prazer conhecê-lo, Al.
+O comprimento do seu nome é:
+2
+Qual é a sua idade?
+4
+Você terá 5 anos em um ano.
+```
+
+Quando não há mais linhas de código para executar, o programa Python *termina*; ou seja, ele para de rodar. (Você também pode dizer que o programa Python *encerrou*.)
+
+Você pode fechar o editor de arquivos clicando no X na parte superior da janela. Para recarregar um programa salvo, selecione **Arquivo** ▸ **Abrir...** no menu. Faça isso agora e, na janela que aparecer, escolha ***```hello.py```*** e clique no botão Abrir. Seu programa *```hello.py```* salvo anteriormente deve abrir na janela do editor de arquivos.
+
+Você pode visualizar a execução de um programa usando a ferramenta de visualização Python Tutor em <http://pythontutor.com/>. Você pode ver a execução deste programa específico em <https://autbor.com/hellopy/>. Clique no botão Avançar para passar por cada etapa da execução do programa. Você poderá ver como os valores das variáveis ​​e a saída mudam.

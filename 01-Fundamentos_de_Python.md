@@ -401,18 +401,18 @@ Python dá esse erro porque o operador ```+``` só pode ser usado para adicionar
 
 ### As funções *str()*, *int()* e *float()*
 
-Se quiser concatenar um número inteiro como 29 com uma string para passar para ```print()```, você precisará obter o valor '29', que é a forma de string de 29. A função ```str()``` pode receber um valor inteiro e será avaliada como uma versão de valor de string do inteiro, da seguinte maneira:
+Se quiser concatenar um número inteiro como 29 com uma string para passar para ```print()```, você precisará obter o valor '29', que é a forma de string de 29. A função ```str()``` pode receber um valor inteiro e será avaliada como uma versão de valor de string do inteiro, da seguinte maneira:
 
 ```pycon
->>> str(29)
+>>> str(29)
 '29'
->>> print('Eu tenho ' + str(29) + ' anos de idade.')
+>>> print('Eu tenho ' + str(29) + ' anos de idade.')
 'Eu tenho 29 anos de idade.'
 ```
 
-Como ```str(29)``` é avaliado como '29' , a expressão ```'Eu tenho ' + str(29) + ' anos de idade.'``` avalia como ```'Eu tenho ' + '29' + ' anos de idade.'```, que por sua vez é avaliado como ```'Eu tenho 29 anos de idade.'```. Este é o valor que é passado para a função ```print()```.
+Como ```str(29)``` é avaliado como '29' , a expressão ```'Eu tenho ' + str(29) + ' anos de idade.'``` avalia como ```'Eu tenho ' + '29' + ' anos de idade.'```, que por sua vez é avaliado como ```'Eu tenho 29 anos de idade.'```. Este é o valor que é passado para a função ```print()```.
 
-As funções ```str()```, ```int()``` e ```float()``` avaliarão as formas *string*, inteiro e ponto flutuante do valor que você passar, respectivamente. Tente converter alguns valores no shell interativo com essas funções e observe o que acontece.
+As funções ```str()```, ```int()``` e ```float()``` avaliarão as formas *string*, inteiro e ponto flutuante do valor que você passar, respectivamente. Tente converter alguns valores no shell interativo com essas funções e observe o que acontece.
 
 ```pycon
 >>> str(0)
@@ -433,9 +433,9 @@ As funções ```str()```, ```int()``` e ```float()``` avaliarão as formas
 10.0
 ```
 
-Os exemplos anteriores chamam as funções ```str()```, ```int()``` e ```float()``` e passam os valores dos outros tipos de dados para obter uma string, um inteiro ou a forma de ponto flutuante desses valores.
+Os exemplos anteriores chamam as funções ```str()```, ```int()``` e ```float()``` e passam os valores dos outros tipos de dados para obter uma string, um inteiro ou a forma de ponto flutuante desses valores.
 
-A função ```str()``` é útil quando você tem um número inteiro ou flutuante que deseja concatenar em uma string. A função ```int()``` também é útil se você tiver um número como valor de string que deseja usar em alguma matemática. Por exemplo, a função ```input()``` sempre retorna uma string, mesmo se o usuário inserir um número. Insira **```spam = input()```** no shell interativo e insira **```101```** quando esperar pelo seu texto.
+A função ```str()``` é útil quando você tem um número inteiro ou flutuante que deseja concatenar em uma string. A função ```int()``` também é útil se você tiver um número como valor de string que deseja usar em alguma matemática. Por exemplo, a função ```input()``` sempre retorna uma string, mesmo se o usuário inserir um número. Insira **```spam = input()```** no shell interativo e insira **```101```** quando esperar pelo seu texto.
 
 ```pycon
 >>> spam = input()
@@ -444,7 +444,7 @@ A função ```str()``` é útil quando você tem um número inteiro ou flutua
 '101'
 ```
 
-O valor armazenado dentro do ```spam``` não é o inteiro ```101```, mas a string ```'101'```. Se você quiser fazer contas usando o valor em ```spam```, use a função ```int()``` para obter a forma inteira de ```spam``` e, a seguir, armazene-o como o novo valor em ```spam```.
+O valor armazenado dentro do ```spam``` não é o inteiro ```101```, mas a string ```'101'```. Se você quiser fazer contas usando o valor em ```spam```, use a função ```int()``` para obter a forma inteira de ```spam``` e, a seguir, armazene-o como o novo valor em ```spam```.
 
 ```pycon
 >>> spam = int(spam)
@@ -452,14 +452,14 @@ O valor armazenado dentro do ```spam``` não é o inteiro ```101```, mas a st
 101
 ```
 
-Agora você deve ser capaz de tratar a variável ```spam``` como um inteiro em vez de uma string.
+Agora você deve ser capaz de tratar a variável ```spam``` como um inteiro em vez de uma string.
 
 ```pycon
 >>> spam * 10 / 5
 202.0
 ```
 
-Observe que se você passar um valor para ```int()``` que não pode ser avaliado como um inteiro, o Python exibirá uma mensagem de erro.
+Observe que se você passar um valor para ```int()``` que não pode ser avaliado como um inteiro, o Python exibirá uma mensagem de erro.
 
 ```pycon
 >>> int('99.99')
@@ -474,7 +474,7 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'vinte'
 ```
 
-A função ```int()``` também é útil se você precisar arredondar um número de ponto flutuante para baixo.
+A função ```int()``` também é útil se você precisar arredondar um número de ponto flutuante para baixo.
 
 ```pycon
 >>> int(7.7)
@@ -483,7 +483,7 @@ A função ```int()``` também é útil se você precisar arredondar um núme
 8
 ```
 
-Você usou as funções ```int()``` e ```str()``` nas últimas três linhas de seu programa para obter um valor do tipo de dados apropriado para o código.
+Você usou as funções ```int()``` e ```str()``` nas últimas três linhas de seu programa para obter um valor do tipo de dados apropriado para o código.
 
 ```py
 ➏ print('Qual é a sua idade? ') # Pergunta a sua idade
@@ -506,27 +506,27 @@ Você usou as funções ```int()``` e ```str()``` nas últimas três linhas
 >
 >Python faz essa distinção porque as strings são texto, enquanto inteiros e flutuantes são números.
 
-A variável ```minhaIdade``` contém o valor retornado de ```input()```. Como a função ```input()``` sempre retorna uma string (mesmo se o usuário digitou um número), você pode usar o código ```int(minhaIdade)``` para retornar um valor inteiro da string em ```minhaIdade```. Este valor inteiro é então adicionado a 1 na expressão ```int(minhaIdade) + 1```.
+A variável ```minhaIdade``` contém o valor retornado de ```input()```. Como a função ```input()``` sempre retorna uma string (mesmo se o usuário digitou um número), você pode usar o código ```int(minhaIdade)``` para retornar um valor inteiro da string em ```minhaIdade```. Este valor inteiro é então adicionado a 1 na expressão ```int(minhaIdade) + 1```.
 
-O resultado dessa adição é passado para a função ```str()```: ```str(int(minhaIdade) + 1)```. O valor da string retornado é então concatenado com as strings ```'Você terá '``` e ```'em um ano'```. para avaliar como um grande valor de string. Esta string grande é finalmente passada para ```print()``` para ser exibida na tela.
+O resultado dessa adição é passado para a função ```str()```: ```str(int(minhaIdade) + 1)```. O valor da string retornado é então concatenado com as strings ```'Você terá '``` e ```'em um ano'```. para avaliar como um grande valor de string. Esta string grande é finalmente passada para ```print()``` para ser exibida na tela.
 
-Digamos que o usuário insira a string ```'4'``` para ```minhaIdade```. A string ```'4'``` é convertida em um inteiro, então você pode adicionar um a ela. O resultado é ```5```. A função ```str()``` converte o resultado de volta em uma string, para que você possa concatená-lo com a segunda string, ```'em um ano.'```, para criar a mensagem final. Essas etapas de avaliação seriam semelhantes a estas:
+Digamos que o usuário insira a string ```'4'``` para ```minhaIdade```. A string ```'4'``` é convertida em um inteiro, então você pode adicionar um a ela. O resultado é ```5```. A função ```str()``` converte o resultado de volta em uma string, para que você possa concatená-lo com a segunda string, ```'em um ano.'```, para criar a mensagem final. Essas etapas de avaliação seriam semelhantes a estas:
 
 ![Imprimindo strings](img/000017.jpg)
 
 ### Resumo
 
-Você pode calcular expressões com uma calculadora ou inserir concatenações de strings com um processador de texto. Você pode até fazer replicação de strings facilmente, copiando e colando texto. Mas as expressões e seus valores de componentes - operadores, variáveis e chamadas de função - são os blocos básicos de construção dos programas. Depois de saber como lidar com esses elementos, você poderá instruir o Python a operar em grandes quantidades de dados para você.
+Você pode calcular expressões com uma calculadora ou inserir concatenações de strings com um processador de texto. Você pode até fazer replicação de strings facilmente, copiando e colando texto. Mas as expressões e seus valores de componentes - operadores, variáveis e chamadas de função - são os blocos básicos de construção dos programas. Depois de saber como lidar com esses elementos, você poderá instruir o Python a operar em grandes quantidades de dados para você.
 
-É bom lembrar os diferentes tipos de operadores (```+```, ```,```, ```/```, ```//```, ```%``` e ```*``` para operações matemáticas e ```+``` e ```*``` para operações de string) e os três tipos de dados (inteiros, números com ponto flutuante e strings) apresentados neste capítulo.
+É bom lembrar os diferentes tipos de operadores (```+```, ```,```, ```/```, ```//```, ```%``` e ```*``` para operações matemáticas e ```+``` e ```*``` para operações de string) e os três tipos de dados (inteiros, números com ponto flutuante e strings) apresentados neste capítulo.
 
-Também introduzi algumas funções diferentes. As funções ```print()``` e ```input()``` tratam de saída de texto simples (para a tela) e entrada (do teclado). A função ```len()``` pega uma string e avalia como um int do número de caracteres na string. As funções ```str()```, ```int()``` e ```float()``` avaliarão a forma de string, número inteiro ou de ponto flutuante do valor que são passados.
+Também introduzi algumas funções diferentes. As funções ```print()``` e ```input()``` tratam de saída de texto simples (para a tela) e entrada (do teclado). A função ```len()``` pega uma string e avalia como um int do número de caracteres na string. As funções ```str()```, ```int()``` e ```float()``` avaliarão a forma de string, número inteiro ou de ponto flutuante do valor que são passados.
 
-No próximo capítulo, você aprenderá como dizer ao Python para tomar decisões inteligentes sobre qual código executar, qual código ignorar e qual código repetir com base nos valores que possui. Isso é conhecido como *controle de fluxo* e permite que você escreva programas que tomem decisões inteligentes.
+No próximo capítulo, você aprenderá como dizer ao Python para tomar decisões inteligentes sobre qual código executar, qual código ignorar e qual código repetir com base nos valores que possui. Isso é conhecido como *controle de fluxo* e permite que você escreva programas que tomem decisões inteligentes.
 
 ### Questões Práticas
 
-1. Quais das opções a seguir são operadores e quais são valores?
+1. Quais das opções a seguir são operadores e quais são valores?
 
 ```txt
 *
@@ -544,7 +544,7 @@ No próximo capítulo, você aprenderá como dizer ao Python para tomar decisõe
 5
 ```
 
-2. Qual das opções a seguir é uma variável e qual é uma string?
+2. Qual das opções a seguir é uma variável e qual é uma string?
 
 ```txt
 spam
@@ -552,13 +552,13 @@ spam
 'spam'
 ```
 
-3. Cite três tipos de dados.
+3. Cite três tipos de dados.
 
-4. Do que é feita uma expressão? O que todas as expressões fazem?
+4. Do que é feita uma expressão? O que todas as expressões fazem?
 
-5. Este capítulo introduziu instruções de atribuição, como spam = 10 . Qual é a diferença entre uma expressão e uma declaração?
+5. Este capítulo introduziu instruções de atribuição, como ```spam = 10```. Qual é a diferença entre uma expressão e uma declaração?
 
-6. O que a variável bacon contém após a execução do código a seguir?
+6. O que a variável ```bacon``` contém após a execução do código a seguir?
 
 ```txt
 bacon = 20
@@ -566,7 +566,7 @@ bacon = 20
 bacon + 1
 ```
 
-7. Qual deve ser a avaliação das duas expressões a seguir?
+7. Qual deve ser a avaliação das duas expressões a seguir?
 
 ```txt
 'spam' + 'spamspam'
@@ -574,21 +574,21 @@ bacon + 1
 'spam' * 3
 ```
 
-8. Por que eggs é um nome de variável válido enquanto 100 é inválido?
+8. Por que ```eggs``` é um nome de variável válido enquanto ```100``` é inválido?
 
-9. Quais três funções podem ser usadas para obter o inteiro, número de ponto flutuante ou versão de string de um valor?
+9. Quais três funções podem ser usadas para obter o inteiro, número de ponto flutuante ou versão de string de um valor?
 
-10. Por que essa expressão causa um erro? Como você pode consertar isso?
+10. Por que essa expressão causa um erro? Como você pode consertar isso?
 
 ```txt
 'Eu comi' + 99 + 'burritos.'
 ```
 
-**Crédito extra:** Pesquise online a documentação do Python para a função len () . Ele estará em uma página da web com o título “Funções integradas”. Percorra a lista de outras funções que o Python possui, verifique o que a função round () faz e experimente no shell interativo.
+**Crédito extra:** Pesquise online a documentação do Python para a função len () . Ele estará em uma página da web com o título “Funções integradas”. Percorra a lista de outras funções que o Python possui, verifique o que a função round () faz e experimente no shell interativo.
 
 [//]: # (Rodapé)
 
-[![TOC](img/prev.png)](00-Introducao.md) [![TOC](img/toc.png)](README.md#índice) [![Próximo](img/next.png)](01-Fundamentos_de_Python.md)
+[![TOC](img/prev.png)](00-Introducao.md) [![TOC](img/toc.png)](README.md#índice) [![Próximo](img/next.png)](02-Controle_de_fluxo.md)
 
 ---
 

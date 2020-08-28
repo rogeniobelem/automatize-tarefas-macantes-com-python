@@ -16,8 +16,9 @@
     - [Declarações ```else```](#declarações-else)
     - [Declarações ```elif```](#declarações-elif)
     - [Declarações do laço ```while```](#declarações-do-laço-while)
-      - [Um laço while Irritante](#um-laço-while-irritante)
-    - [Declarações break](#declarações-break)
+      - [Um laço ```while``` Irritante](#um-laço-while-irritante)
+    - [Declarações ```break```](#declarações-break)
+    - [Declarações ```continue```](#declarações-continue)
 
 ![Fundamentos de Python](img/000143.jpg)
 
@@ -93,7 +94,7 @@ Como você pode esperar, ```==``` (igual a) é avaliado como ```True``` quando o
    True
    >>> 42 == 42.0
    True
-➊ >>> 42 == '42'
+➊  >>> 42 == '42'
    False
 ```
 
@@ -430,9 +431,9 @@ O código com a instrução ```if``` verifica a condição e imprime ```Olá, mu
 
 No laço ```while```, a condição é sempre verificada no início de cada *iteração* (ou seja, cada vez que o laço é executado). Se a condição for ```True```, a cláusula é executada e, posteriormente, a condição é verificada novamente. Na primeira vez que a condição for considerada ```False```, a cláusula ```while``` é ignorada.
 
-#### Um laço while Irritante
+#### Um laço ```while``` Irritante
 
-Aqui está um pequeno programa de exemplo que premanecerá pedindo que você digite, literalmente, ```seu nome```. Selecione **Arquivo** ▸ **Novo** para abrir uma nova janela do editor de arquivo, insira o seguinte código e salve o arquivo como *```seuNome.py```*:
+Aqui está um pequeno programa de exemplo que premanecerá pedindo que você digite, literalmente, ```seu nome```. Selecione **Arquivo** ▸ **Novo** para abrir uma nova janela do editor de arquivo, insira o seguinte código e salve o arquivo como *```yourName.py```*:
 
 ```py
 ➊ nome = ''
@@ -467,7 +468,7 @@ obrigado!
 
 Se você nunca digitar ```seu nome```, então a condição do laço ```while``` nunca será ```False```, e o programa permanecerá perguntando para sempre. Aqui, a chamada ```input()``` permite que o usuário insira a string certa para fazer o programa seguir em frente. Em outros programas, a condição pode nunca mudar de fato, e isso pode ser um problema. Vamos olhar como você pode sair de um laço ```while```.
 
-### Declarações break
+### Declarações ```break```
 
 Há um atalho para obter a saída de execução de uma cláusula de laço ```while``` precocemente. Se a execução atingir uma declaração ```break```, ele imediatamente sai da cláusula de laço ```while```. No código, uma instrução ```break``` simplesmente contém a palavra-chave ```break```.
 
@@ -490,3 +491,76 @@ Execute *```yourName2.py```* e insira o mesmo texto inserido para *```yourName.p
 
 ![O fluxograma para o programa yourName2.py](img/fig2-11.jpg)  
 ***Figura 2-11**: O fluxograma para o programa* ```yourName2.py``` *com um laço infinito. Observe que o caminho X logicamente nunca acontecerá, porque a condição de laço é sempre ```True```.*
+
+### Declarações ```continue```
+
+Como as instruções ```break```, as instruções ```continue``` são usadas dentro de laços. Quando a execução do programa atinge uma instrução ```continue```, a execução do programa salta imediatamente para o início do laço e reavalia a condição do laço. (Isso também acontece quando a execução chega ao final do laço.)
+
+Vamos usar o ```continue``` para escrever um programa que pede um nome e uma senha. Insira o código a seguir em uma nova janela do editor de arquivo e salve o programa como *```swordfish.py```*.
+
+>**Preso em um laço infinito?**
+>
+>Se você já executou um programa que tem um bug que o faz travar em um laço infinito, pressione ```CTRL-C``` ou selecione **Shell** ▸ **Reiniciar Shell** no menu do IDLE. Isso enviará um erro de KeyboardInterrupt ao programa e fará com que ele pare imediatamente. Tente interromper um programa criando um laço infinito simples no editor de arquivos e salve o programa como *```infiniteloop.py```* .
+>
+>```py
+>while True:
+>    print('Olá, mundo!')
+>```
+>
+>Quando você executar este programa, ele imprimirá ```Olá, mundo!``` na tela para sempre porque a condição da instrução ```while``` é sempre ```True```. ```CTRL-C``` também é útil se você quiser simplesmente encerrar seu programa imediatamente, mesmo que ele não esteja preso em um laço infinito.
+
+```py
+  while True:
+      print('Quem é você?')
+      nome = input()
+    ➊ if nome != 'Joe':
+        ➋ continue
+       print('Olá, Joe. Qual é a senha? (É um peixe.)')
+    ➌ senha = input()
+       if senha == 'swordfish':
+        ➍ break
+➎ print('Acesso concedido.')    
+```
+Se o usuário inserir qualquer nome além de ```Joe``` ➊, a instrução ```continue``` ➋ faz com que a execução do programa volte para o início do laço. Quando o programa reavalia a condição, a execução sempre entrará no laço, já que a condição é simplesmente o valor ```True```. Depois que o usuário passa pela instrução ```if```, é solicitada a ```senha``` ➌. Se a senha digitada é ```swordfish```, então a declaração ```break``` ➍ é executada, e a execução salta para fora do laço ```while``` para imprimir ```Acesso concedido``` ➎. Caso contrário, a execução continua até o fim do laço ```while```, onde, em seguida, salta para o início do laço. Consulte a **Figura 2-12** para ver o fluxograma deste programa.
+
+![Um fluxograma para swordfish.py.](img/fig2-12.jpg)  
+***Figura 2-12**: Um fluxograma para* ```swordfish.py```. *O caminho X logicamente nunca acontecerá, porque a condição de laço é sempre ```True```.*
+
+>**VALORES “VERDADEIROS” E “FALSOS”**
+>
+>As condições considerarão alguns valores em outros tipos de dados equivalentes a Verdadeiro e Falso . Quando usado em condições, 0 , 0,0 e '' (a string vazia) são considerados falsos , enquanto todos os outros valores são considerados verdadeiros . Por exemplo, observe o seguinte programa:
+>
+>```py
+>
+>nome = ''
+>➊ while not nome:
+>    print('Digite seu nome:')
+>    nome = input()
+>print('Quantos convidados você terá?')
+>numDeConvidados = int(input())
+>➋ if numDeConvidados:
+>    ➌ print('Certifique-se de ter espaço suficiente para todos os seus convidados.')
+>print('Concluído')
+>```
+>
+>Você pode ver a execução deste programa em <https://autbor.com/howmanyguests/>. Se o usuário inserir uma string em branco para nome , a condição da instrução while será ```True``` ➊, e o programa continuará a solicitar um nome. Se o valor de ```numDeConvidados``` não for 0 ➋, a condição é considerada ```True``` e o programa imprimirá um lembrete para o usuário ➌.
+>
+>Você poderia ter inserido ```nome != ''``` Em vez de ```not nome```, e ```numDeConvidados != 0``` em vez de ```numDeConvidados```, mas usar os valores verdadeiro e falso pode tornar seu código mais fácil de ler.
+
+Execute este programa e forneça algumas informações. Até que você afirme ser Joe, o programa não deve pedir uma senha e, uma vez que você insira a senha correta, ele deve sair.
+
+```
+Quem é Você?
+Eu estou bem, obrigado. Quem é Você?
+Quem é Você?
+Joe
+Olá, Joe. Qual é a senha? (É um peixe.)
+Mary
+Quem é você?
+Joe
+Olá, Joe. Qual é a senha? (É um peixe.)
+swordfish
+Acesso concedido.
+```
+
+Você pode ver a execução deste programa em <https://autbor.com/hellojoe/>.

@@ -37,9 +37,9 @@ Não gaste seu tempo fazendo o trabalho que um macaco bem treinado poderia fazer
 ## Índice
 
 - [Capítulo 0 – Introdução](00-Introducao.md)
-- [Capítulo 1 – Python Basics](01-Fundamentos_de_Python.md)
-- Capítulo 2 – Flow Control
-- Capítulo 3 – Functions
+- [Capítulo 1 – Fundamentos de Python](01-Fundamentos_de_Python.md)
+- [Capítulo 2 – Controle de Fluxo](02-Controle_de_fluxo.md)
+- Capítulo 3 – Funções
 - Capítulo 4 – Lists
 - Capítulo 5 – Dictionaries and Structuring Data
 - Capítulo 6 – Manipulating Strings
